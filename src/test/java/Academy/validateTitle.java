@@ -29,7 +29,7 @@ public class validateTitle extends base{
         log.info("Driver is initialized");
 
         driver.get(prop.getProperty("url"));
-        log.info("Navigated to Home page");
+        log.info("Navigated to  the Home page");
     }
     @Test
 
