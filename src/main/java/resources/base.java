@@ -31,18 +31,17 @@ public class base {
         {
             System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
             driver= new ChromeDriver();
-            //execute in chrome driver
 
         }
         else if (browserName.equals("firefox"))
         {
             driver= new FirefoxDriver();
-            //firefox code
+
         }
         else if (browserName.equals("IE"))
         {
             driver= new InternetExplorerDriver();
-            //	IE code
+
         }
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
