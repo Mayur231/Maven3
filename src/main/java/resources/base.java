@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class base {
 
@@ -40,7 +41,8 @@ public class base {
         }
         else if (browserName.equals("IE"))
         {
-//	IE code
+            driver= new InternetExplorerDriver();
+            //	IE code
         }
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
